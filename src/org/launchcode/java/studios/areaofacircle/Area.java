@@ -13,6 +13,9 @@ public class Area {
         radius = input.nextDouble();
         //area = pi * (radius * radius);
         area = Circle.getArea(radius);
+        if (radius < 0){
+            System.out.println("ERROR");
+        } else
         System.out.println("The area of a circle with a radius of " + radius + " is: " + area);
 
     }
