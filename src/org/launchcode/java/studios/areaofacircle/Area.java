@@ -22,3 +22,4 @@ public class Area {
 }
 
 //what data type will accept anything, casting etc accept is he asid reassign as a string then check to see
+//maybe try an else if statement and parsing
