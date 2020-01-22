@@ -23,6 +23,7 @@ public class CharacterCount {
             char lowerCaseChar = letters.toLowerCase().charAt(i);
             if (emptyHash.containsKey(lowerCaseChar)) {
                 count = emptyHash.get(lowerCaseChar) + 1;
+                //use get not getvalue to access value at key in HM
                 emptyHash.put(lowerCaseChar, count);
             } else {
                 emptyHash.put(lowerCaseChar, 1);
