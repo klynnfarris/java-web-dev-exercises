@@ -15,10 +15,11 @@ public class CharacterCount {
                 "you can put the quadratics into a form that can be factored allowing that side of the " +
                 "equation to equal zero. Once you’ve done that, it’s pretty straightforward from there.";
         */
-
+        //could also use char[] textInString = letters.toCharArray()
         HashMap<Character, Integer> emptyHash = new HashMap<>();
 
-        int count = 0;
+        int count = 1;
+        //cleaer way is to use for each
         for (int i=0; i<letters.length(); i++) {
             char lowerCaseChar = letters.toLowerCase().charAt(i);
             if (emptyHash.containsKey(lowerCaseChar)) {
@@ -31,6 +32,7 @@ public class CharacterCount {
         }
 
         System.out.println("How many times a character appears in the string:");
+        //iterate through a hasmap and this map.entry thing is the type we use
         for (Map.Entry<Character, Integer> letter : emptyHash.entrySet()) {
             System.out.println(letter.getKey() + ":" + letter.getValue());
         }
